@@ -1,0 +1,99 @@
+/*---------------------------------------- Navbar Styling ----------------------------------------*/
+.logo{
+  align-self: center;
+  /* background: var(--p1); */
+  height: max-content;
+}
+.logo img{
+  /* aspect-ratio: 1/1; */
+  height: 6vh;
+  /* width: 6vh; */
+  
+  /* border-radius: 50%; */
+}
+.shop-name{
+  color: var(--p1);
+  font-size: var(--h2);
+  padding-left: calc(var(--padding) * 1);
+  align-self: center;
+}
+.navbar{
+  display: grid;
+  grid-template-columns: max-content max-content 1fr max-content;
+  background: var(--p2);
+  padding: var(--padding);
+  height: 7vh;
+  z-index: 99;
+}
+.navbar ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  padding-right: var(--padding);
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: var(--light);
+  font-size: var(--h3);
+  padding: 1rem var(--padding);
+  /* text-transform: uppercase; */
+}
+.page-links li a:hover{
+  background: var(--p1);
+  color: var(--dark);
+  border-radius: var(--padding);
+}
+.active{
+  background: var(--p1);
+  border-radius: var(--padding);
+}
+
+/*---------------------------------------- Footer Styling ----------------------------------------*/
+.footer-body{
+  height: 15vh;
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  column-gap: var(--padding);
+  background: var(--light);
+  padding: var(--padding) var(--padding) 0px 0px;
+  border-top: 5px solid var(--p1);
+}
+.footer-left{
+  background: none;
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+  color: var(--p2);
+}
+.company-info{
+  padding: var(--padding);
+  background: var(--dark);
+  color: var(--light);
+  text-align: center;
+}
+.footer-right{
+  background-color: none;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+}
+.footer-right a{
+  display: flex;
+  flex-direction: row;
+  gap: var(--padding);
+  align-items: center;
+  text-decoration: none;
+  padding: var(--padding);
+}
+.footer-right a p{
+  color: var(--p1);
+}
+.footer-right a:hover{
+  background: var(--p1);
+  border-radius: 10px;
+}
+.footer-right a:hover p{
+  color: var(--p2);
+}
+.footer-right a img{
+  height: 30px;
+}
